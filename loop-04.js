@@ -16,4 +16,6 @@ function pyramid(n) {
 	return res
 }
 
+print(pyramid(30))
+
 module.exports = pyramid;
