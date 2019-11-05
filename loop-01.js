@@ -1,1 +1,5 @@
-// Напишите программу, которая напечатает 100 строк Hello world! при помощи цикла for.
+var print = require('./printModule.js');
+
+for (var i = 0; i < 100; i++) {
+	print("Hello World!")
+}
