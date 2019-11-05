@@ -1,4 +1,4 @@
-var print = require('./printModule.js');
+print = require('./modules.js')["print"]
 
 i = 0
 

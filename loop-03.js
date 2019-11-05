@@ -1,4 +1,4 @@
-var print = require('./printModule.js');
+print = require('./modules.js')["print"]
 
 function gcd(m,n) {
 
@@ -21,6 +21,6 @@ function gcd(m,n) {
 	return m;
 }
 
-// console.log(gcd(66, 42))
+// print(gcd(66, 42))
 
 module.exports = gcd;
