@@ -9,7 +9,7 @@ function checkCardNumber(nstr) {
 		if (nstr[i] != " ") { // если вдруг на подачу пойдет номер типа '1234 5678'
 
 			if (i % 2 == 0) {
-				k = String(nstr[i]*2) // костыль для итерации двухзначных чисел
+				k = String(nstr[i]*2)
 
 				for (var x = 0; x < k.length; x++) {
 					evenSum += (parseInt(k[x]))
