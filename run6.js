@@ -1,2 +1,2 @@
 var expDiff = require('./loop-06.js');
-console.log(expDiff(1));
+console.log(expDiff(3));

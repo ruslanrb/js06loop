@@ -1,0 +1,26 @@
+{
+  "name": "js06loop",
+  "version": "1.0.0",
+  "description": "В этой работе надо сначала написать тесты к задаче, а затем само решение.",
+  "main": "loop-01.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "qunit": "^2.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "qunit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/progivt19/js06loop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/progivt19/js06loop/issues"
+  },
+  "homepage": "https://github.com/progivt19/js06loop#readme"
+}
