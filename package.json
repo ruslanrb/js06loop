@@ -1,0 +1,25 @@
+{
+  "name": "06loop",
+  "version": "1.0.0",
+  "description": "ЛР6: Циклы",
+  "devDependencies": {},
+  "dependencies": {
+    "qunit": "^2.9.3"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "qunit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "loops",
+    "циклы"
+  ],
+  "author": "А.В.Павлов",
+  "license": "MIT"
+}
