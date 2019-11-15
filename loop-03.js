@@ -19,13 +19,3 @@ function gcd(m,n) {
 }
 
 module.exports = gcd;
-
-/*
-function = gcd(m,n) {
-    if ( ! n) {
-        return m;
-    }
-
-    return gcd(n, m % n);
-};
-*/
