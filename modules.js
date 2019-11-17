@@ -3,7 +3,7 @@ function print(text) { // писать console.log слишком долго
 }
 
 function factorial(n) {
-	if (n == 1) {
+	if (n <= 1) {
 		return n
 	}
 
@@ -29,8 +29,8 @@ function pow(n, exp) { // возведение в степень
 
 // проверка
 // print(factorial(5)) // 120
-// print(abs(5)) // 5
-// print(abs(-5)) // 5
-// print(pow(5, 3)) // 125
+// print(abs(5))       // 5
+// print(abs(-5))      // 5
+// print(pow(5, 3))    // 125
 
 module.exports = {print, factorial, abs, pow};
