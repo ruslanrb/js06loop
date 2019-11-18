@@ -1,0 +1,78 @@
+%!TEX program = xelatex
+\documentclass{article}
+\usepackage[a5paper,hmargin=17mm,tmargin=15mm,bmargin=25mm]{geometry}
+
+\usepackage{ifxetex}
+\ifxetex
+ \usepackage{fontspec}
+ \setmainfont[Scale=1.1]{Arno Pro}
+ \setmonofont[Scale=.92]{Consolas}
+ \usepackage{unicode-math}              %% пакет для загрузки шрифтов математического режима 
+ \setmathfont{latinmodern-math.otf}
+ \setmathfont[range=\mathit/{latin,Latin}]{Arno Pro Italic}
+ \setmathfont[range=up]{Arno Pro}
+ \setmathfont[range=\mathup/{latin,Latin}]{Arno Pro}
+\else
+ \usepackage[utf8]{inputenc}
+\fi
+\usepackage[russian]{babel}
+\usepackage{enumitem}
+
+
+\begin{document}
+\section*{{\normalsize Лабораторная работа 6} \\Циклы}
+
+Цель этой лабораторной работы~--- изучить понятие цикла и продемонстрировать умение записывать циклы в языке JavaScript. 
+
+\bigskip
+\noindent\textbf{ВНИМАНИЕ! Файлы называть \texttt{loop-01.js} и т.\,д. Массивы, библиотечные функции (кроме \texttt{console.log}), не использовать.}
+\bigskip\sloppy
+
+\begin{enumerate}
+\item
+Напишите программу, которая напечатает 100 строк \texttt{Hello world!} при помощи цикла \texttt{for}.
+\item
+Напишите программу, которая напечатает 100 строк \texttt{Hello world!} при помощи цикла \texttt{do \ldots\ while}.
+\end{enumerate}
+
+
+
+\begin{quotation}
+\noindent\centering
+\textbf{В заданиях 3--6 необходимо экспортировать вашу функцию:}\\
+
+\texttt{module.exports = pyramid;} и т.п.
+\end{quotation}
+
+
+\begin{enumerate}
+\setcounter{enumi}{2}
+\item
+Напишите функцию \texttt{gcd(m, n)}, которая возвращает наибольший общий делитель чисел $m$ и $n$. Например,  \texttt{gcd(24,18)} должно быть равно $6$.
+
+
+\item
+Напишите функцию \texttt{pyramid(n)}, которая возвращает текстовую пирамиду из решеток и пробелов высоты $n$ ($1\leqslant n \leqslant 20)$, например для $n=3$ функция должна вернуть три сцепленных строки:\\
+\verb!  #!\\
+\verb! ###!\\
+\verb!#####!\\
+т.\,е. строку \verb!  #\n ###\n#####!.
+
+\item
+Для быстрой, без связи с банком, проверки правильности ввода номера кредитной карты используется алгоритм Х.\,П.~Луна: умножим, двигаясь справа налево, каждую вторую цифру номера на 2. Сложим все \emph{цифры} полученных чисел (внимание, не сами числа!). Теперь прибавим к ним сумму остальных цифр. Если полученная общая сумма не делится на 10, номер неправильный. 
+
+Пример: номер \underline{4}3\underline{7}2\,\underline{2}8\underline{2}2\,\underline{4}4\underline{3}1\,\underline{0}0\underline{0}5 верный: удвоения подчеркнутых цифр равны 8, 14, 4, 4, 8, 6, 0, 0, их цифры в сумме дают $8 + (1\!+\!4) + 4 + 4+ 8+ 6 + 0+ 0 = 35$, сумма неподчеркнутых цифр номера равна $3+2+8+2+4+1+0+5=25$, а $35+25=6\mbox{\textbf{\textit{0}}}$.
+
+Напишите функцию \texttt{checkCardNumber(nstr)}, которая возвращает \texttt{true}, если номер, записанный в строке  \texttt{nstr} проходит проверку по алгоритму Луна, и \texttt{false} в противном случае. Проверки будут производиться на строках, содержащих от 13 до 16 цифр. 
+
+\item
+К волшебному пределу $e = \lim\limits_{n\to\infty}(1+\frac{1}{n})^n$ можно приблизиться по-другому: ряд 
+$$ 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \ldots +  \frac{x^n}{n!}+\ldots \eqno{(*)}$$
+сходится к $e^x$ при любых $x$.
+
+Напишите функцию \texttt{expDiff(x)}, которая получает вещественное $x$, суммирует только те слагаемые ряда $(*)$, которые по модулю не меньше 0.0001 (модули слагаемых монотонно убывают), и выводит модуль разности между значением библиотечной функции \texttt{Math.exp(x)} и полученным значением суммы.
+\end{enumerate}
+
+
+
+\end{document}
