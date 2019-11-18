@@ -3,6 +3,7 @@ print = require('./modules.js')["print"]
 function checkCardNumber(nstr) {
 	var evenSum = 0
 	var unevenSum = 0
+	nstr
 
 	for (var i = nstr.length-1; i >= 0; i--) {
 
