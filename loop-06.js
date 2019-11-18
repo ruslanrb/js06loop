@@ -1,4 +1,3 @@
-print = require('./modules.js')["print"]
 factorial = require('./modules.js')["factorial"]
 abs = require('./modules.js')["abs"]
 pow = require('./modules.js')["pow"]
@@ -20,7 +19,5 @@ function expDiff(x) {
 		n += 1
 	}
 }
-
-// print(expDiff(10))
 
 module.exports = expDiff;

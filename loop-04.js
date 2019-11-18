@@ -1,6 +1,3 @@
-fs = require("fs")
-print = require('./modules.js')["print"]
-
 function pyramid(n) {
 	var res = ""
 
@@ -11,13 +8,10 @@ function pyramid(n) {
 		for (var x = 1; x <= (i*2)+1; x++) {
 			res += "#"
 		}
-		res+="\n"
+		if (i < n-1) {res+="\n"}
 	}
 
 	return res
 }
-
-print(pyramid(3))
-fs.writeFileSync("hello.txt", pyramid(3))
 
 module.exports = pyramid;

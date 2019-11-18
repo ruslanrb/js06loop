@@ -1,2 +1,5 @@
+var print = require('./modules.js')["print"];
 var pyramid = require('./loop-04.js');
-console.log(pyramid(4));
+
+print(pyramid(3));
+print(pyramid(5));
