@@ -1,3 +1,4 @@
+fs = require("fs")
 print = require('./modules.js')["print"]
 
 function pyramid(n) {
@@ -16,6 +17,7 @@ function pyramid(n) {
 	return res
 }
 
-// print(pyramid(30))
+print(pyramid(3))
+fs.writeFileSync("hello.txt", pyramid(3))
 
 module.exports = pyramid;
