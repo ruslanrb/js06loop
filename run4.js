@@ -3,10 +3,10 @@ console.log(gcd(24, 16));
 console.log(gcd(0, 1232));
 
 var pyramid = require('./loop-04.js');
-console.log(pyramid(3));
+console.log(pyramid(10));
 
 var checkCardNumber = require('./loop-05.js');
-console.log(checkCardNumber(5175082465753545));
+console.log(checkCardNumber(4372282244310005));
 
 console.log("( ͡° ͜ʖ ͡°)")
 
