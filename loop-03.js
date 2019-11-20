@@ -1,4 +1,8 @@
+abs = require('./modules.js')["abs"]
+
 function gcd(m,n) {
+	m = abs(m)
+	n = abs(n)
 
 	if (m == n) {
 		return m
