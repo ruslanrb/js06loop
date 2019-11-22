@@ -19,4 +19,4 @@ matrix:
     env: $TASK=test6
 script: 
   - "npm install mocha"
-  - "mocha test/mo/$TASK.js"
+  - "mocha mt/$TASK.js"
