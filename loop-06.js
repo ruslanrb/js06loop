@@ -1,23 +1,20 @@
 factorial = require('./modules.js')["factorial"]
 abs = require('./modules.js')["abs"]
 pow = require('./modules.js')["pow"]
+print = require('./modules.js')["print"]
 
 function expDiff(x) {
-	var def = Math.exp(x);
-	var n = 1;
-	var digit = 1;
+	let n = 1;
+	let digit = 1;
+	let term = x
 
-	while (true) {
-		term = pow(x, n)/factorial(n)
-
-		if (abs(term) >= 0.0001) {
-			digit += term
-		} else {
-			return abs(digit - def)
-		}
-
-		n += 1
+	while (abs(term) >= 0.0001) {
+		digit += term;
+		n += 1;	
+		term = pow(x, n)/factorial(n);
 	}
+
+	return abs(Math.exp(x) - digit)
 }
 
 module.exports = expDiff;

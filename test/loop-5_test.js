@@ -1,6 +1,6 @@
 const f = require('../loop-05.js');
 
-QUnit.test("f(m, n) return наибольший общий делитель", 
+QUnit.test("f(m, n) return bool валидность карты", 
 	function(assert){
 		assert.deepEqual(f("4372282244310005"), true, "Не выполнено 4372282244310005");
 		assert.deepEqual(f("2200550150171302"), true, "Не выполнено 2200550150171302");

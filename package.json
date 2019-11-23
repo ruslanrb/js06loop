@@ -1,8 +1,11 @@
 {
-  "name": "js06loop",
+  "name": "06loop",
   "version": "1.0.0",
   "description": "ЛР6: Циклы",
   "devDependencies": {},
+  "dependencies": {
+    "qunit": "^2.9.3"
+  },
   "directories": {
     "test": "test"
   },
@@ -14,12 +17,9 @@
     "url": "."
   },
   "keywords": [
-    "strings",
-    "строки"
+    "loops",
+    "циклы"
   ],
   "author": "А.В.Павлов",
-  "license": "MIT",
-  "dependencies": {
-    "qunit": "^2.9.3"
-  }
+  "license": "MIT"
 }
