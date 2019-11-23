@@ -1,2 +1,2 @@
-var pyramid = require('./L04-03');
-console.log(pyramid(1));
+var pyramid = require('./loop-04.js');
+console.log(pyramid(5));
