@@ -19,7 +19,6 @@ c=Math.trunc(h/i);
 v=c%10;
 d=v+d;
 }
-console.log(b,d);
 if ((b+d)%10==0){
 return "True"
 }else{
