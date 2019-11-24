@@ -12,5 +12,4 @@ function gcd(m,n) {
 	return m;
 	return res;
 }
-
 module.exports = gcd;
