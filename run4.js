@@ -1,2 +1,2 @@
-var expDiff = require('./loop-06.js');
-console.log(expDiff("4"));
+var checkCardNumber = require('./loop-05.js');
+console.log(checkCardNumber("12030101010413123"));
