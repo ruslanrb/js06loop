@@ -13,9 +13,8 @@ function checkCardNumber(nstr) {
 		}
 		else {sum+=k}
 	}
-
-	if (sum % 10 != 0) {return false}
-	else {return true}
+	
+	return (sum % 10 != 0) ? false : true;
 }
 
 module.exports = checkCardNumber;
