@@ -24,6 +24,7 @@ function checkCardNumber(nstr) {
    	         return false;
          }
    }
+   
 }
 
 module.exports = checkCardNumber;
