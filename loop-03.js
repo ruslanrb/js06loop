@@ -1,4 +1,5 @@
 function gcd(m, n) {
+	var res;
   if(m==0 || n==0){
 		return 0;
 	}
@@ -7,5 +8,6 @@ function gcd(m, n) {
 	}
   while(n!== 0) n = m %(m = n);
   return m;
+	return res;
 }
 module.exports = gcd;
