@@ -13,8 +13,7 @@ function pyramid(n) {
 			}
 			if (i < n -1) s += c;
 		}
-	}else{
-		console.log("Введите число от 1 до 20")
+	
 	}
 	return s;
 }

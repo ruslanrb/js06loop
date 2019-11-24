@@ -1,2 +1,2 @@
-var pyramid = require('./loop-04.js');
-console.log(pyramid(5));
+var expDiff = require('./loop-06.js');
+console.log(expDiff("4"));
