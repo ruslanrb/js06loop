@@ -1,4 +1,4 @@
-const f = require('../loop-04.js');
+ const f = require('../loop-04.js');
 
 QUnit.test("f(m, n) return пирамидка", 
 	function(assert){
